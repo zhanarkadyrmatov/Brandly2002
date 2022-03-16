@@ -1,0 +1,53 @@
+@import "vars";
+
+.hero {
+  min-height: 544px;
+  padding: 140px 0 89px;
+  text-align: center;
+  background-image: url("../images/Mask\ Group.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $light;
+  text-transform: uppercase;
+
+  &__title {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.5em;
+    margin: 0 0 45px;
+  }
+
+  &__info {
+    display: inline-block;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 60px;
+    margin: 0 0 45px;
+
+    &-secondary {
+      margin: 0 0 45px;
+      font-family: $secondary-font;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  &__link {
+    color: $light;
+    border: 2px solid $light;
+
+    &:hover {
+      background-color: $accent;
+      border-color: $accent;
+      transition: all 0.3;
+    }
+  }
+}
