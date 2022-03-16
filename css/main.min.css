@@ -1,0 +1,384 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "lato", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 16px 0;
+}
+
+.header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav-toggle {
+  display: none;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.menu__item {
+  padding: 0 54px 0 0;
+}
+
+.menu__link {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #d94343;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu__link:hover {
+  color: #ea9898;
+}
+
+.logo {
+  max-width: 255px;
+}
+
+.hero {
+  min-height: 544px;
+  padding: 140px 0 89px;
+  text-align: center;
+  background-image: url("../images/Mask Group.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.5em;
+  margin: 0 0 45px;
+}
+
+.hero__info {
+  display: inline-block;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 60px;
+  margin: 0 0 45px;
+}
+
+.hero__info-secondary {
+  margin: 0 0 45px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.hero__link {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.hero__link:hover {
+  background-color: #d94343;
+  border-color: #d94343;
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 37, 51, 0.4);
+  z-index: -1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 21px 56px;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.section-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #333;
+  text-align: center;
+}
+
+.categories {
+  margin: 60px 0;
+}
+
+.categories__title {
+  position: relative;
+  padding: 28px 0 32px;
+  margin: 60px 0;
+}
+
+.categories__title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 600px;
+  width: 115px;
+  border: 3px solid #d94343;
+}
+
+.categories__title::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 600px;
+  width: 115px;
+  border: 3px solid #d94343;
+}
+
+.categories .categories__list {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  gap: 30px;
+  text-align: center;
+  margin: 69px 0;
+}
+
+.categories .categories__item {
+  margin: 180px 0;
+}
+
+.categories .categories__link {
+  background-image: url("../images/men.jpg");
+  padding: 186px 136px 187px 136px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+}
+
+.categories .categories__link-2 {
+  background-image: url("../images/women.png");
+  padding: 186px 107px 187px 105px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+}
+
+.categories .categories__link-3 {
+  background-image: url("../images/saat.jpg");
+  padding: 186px 69px 187px 65px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog {
+  margin: 70px 0 86px;
+}
+
+.blog .blog__title {
+  position: relative;
+  padding: 28px 0 32px;
+  margin: 60px 0;
+}
+
+.blog .blog__title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 600px;
+  width: 115px;
+  border: 3px solid #d94343;
+}
+
+.blog .blog__title::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 600px;
+  width: 115px;
+  border: 3px solid #d94343;
+}
+
+.blog .blog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.blog .blog__item {
+  width: 540px;
+  height: 594px;
+}
+
+.blog .blog__item .blog__item-title {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #d94343;
+}
+
+.blog .blog__item .blog__item-details {
+  position: relative;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.blog .blog__item .blog__item-span {
+  position: relative;
+  padding-right: 40px;
+}
+
+.blog .blog__item .blog__item-span::before {
+  position: absolute;
+  right: 20px;
+  content: "";
+  height: 20px;
+  border: 1px solid #333;
+}
+
+.blog .blog__item .blog__item-leed {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.blog .blog__item .blog__item-link {
+  color: #000;
+  border: 1px solid #333;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 4px 25px;
+}
+
+.blog .blog__item .blog__item-link:hover {
+  color: #fff;
+  background-color: #d94343;
+}
+
+.footer {
+  background-image: url("../images/Mask footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1440px;
+  height: 157px;
+}
+
+.footer .footer__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 65px 0;
+}
